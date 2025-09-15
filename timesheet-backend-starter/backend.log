@@ -1,0 +1,5 @@
+
+> timesheet-backend-starter@0.1.0 start
+> node dist/server.js
+
+✅ API listening on http://localhost:4000

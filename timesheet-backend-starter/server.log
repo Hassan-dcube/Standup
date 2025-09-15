@@ -1,0 +1,115 @@
+✅ API listening on http://localhost:4000
+{"timestamp":"2025-09-09T06:22:18.268Z","level":"INFO","message":"Starting nightly batch service for weekday mornings at 2 AM PKT"}
+{"timestamp":"2025-09-09T06:22:18.268Z","level":"INFO","message":"Next batch job scheduled for: 2025-09-09T16:00:00.000Z (PKT)"}
+🌙 Nightly batch service started
+PUT /api/tasks/:id - Request received
+Task ID: cmfb338xe000dprh97eb9ne7q User ID: hassan-manager Org ID: demo-org
+{"timestamp":"2025-09-09T08:57:48.705Z","level":"INFO","message":"Triggering standup assessment","data":{"userId":"3","sessionId":"cmfcbggjb0007u608rn7xxv4w","triggerType":"standup_submission"}}
+{"timestamp":"2025-09-09T08:57:48.730Z","level":"INFO","message":"Found assigned tasks for assessment","data":{"userId":"3","taskCount":0,"taskIds":[]}}
+{"timestamp":"2025-09-09T08:57:48.730Z","level":"INFO","message":"Standup assessment trigger completed","data":{"userId":"3","sessionId":"cmfcbggjb0007u608rn7xxv4w","success":true,"taskCount":0,"projectCount":0,"failedTasks":0,"failedProjects":0,"totalDurationMs":26,"taskAnalysisMs":0,"projectRecomputeMs":0,"errorCount":0}}
+{"timestamp":"2025-09-09T09:41:20.481Z","level":"INFO","message":"Triggering manual project recomputation","data":{"projectId":"paper-project","userId":"hassan-manager","triggerType":"manual_recompute"}}
+{"timestamp":"2025-09-09T09:41:20.510Z","level":"INFO","message":"Manual recomputation completed","data":{"projectId":"paper-project","userId":"hassan-manager","previousProgress":0.60605304105,"newProgress":0.6042371287349999,"change":-0.0018159123150001122,"durationMs":30}}
+{"timestamp":"2025-09-09T09:52:48.587Z","level":"INFO","message":"Triggering manual project recomputation","data":{"projectId":"paper-project","userId":"hassan-manager","triggerType":"manual_recompute"}}
+{"timestamp":"2025-09-09T09:52:48.596Z","level":"INFO","message":"Manual recomputation completed","data":{"projectId":"paper-project","userId":"hassan-manager","previousProgress":0,"newProgress":0,"change":0,"durationMs":9}}
+Error adding project member: PrismaClientKnownRequestError: 
+Invalid `prisma.projectMember.create()` invocation:
+
+
+Foreign key constraint violated: `ProjectMember_userId_fkey (index)`
+    at $n.handleRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async file:///Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/dist/routes/projects.js:421:24 {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'ProjectMember',
+    field_name: 'ProjectMember_userId_fkey (index)'
+  }
+}
+Error adding project member: PrismaClientKnownRequestError: 
+Invalid `prisma.projectMember.create()` invocation:
+
+
+Foreign key constraint violated: `ProjectMember_userId_fkey (index)`
+    at $n.handleRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async file:///Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/dist/routes/projects.js:421:24 {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'ProjectMember',
+    field_name: 'ProjectMember_userId_fkey (index)'
+  }
+}
+Error adding project member: PrismaClientKnownRequestError: 
+Invalid `prisma.projectMember.create()` invocation:
+
+
+Foreign key constraint violated: `ProjectMember_userId_fkey (index)`
+    at $n.handleRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async file:///Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/dist/routes/projects.js:421:24 {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'ProjectMember',
+    field_name: 'ProjectMember_userId_fkey (index)'
+  }
+}
+Error adding project member: PrismaClientKnownRequestError: 
+Invalid `prisma.projectMember.create()` invocation:
+
+
+Foreign key constraint violated: `ProjectMember_userId_fkey (index)`
+    at $n.handleRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async file:///Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/dist/routes/projects.js:421:24 {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'ProjectMember',
+    field_name: 'ProjectMember_userId_fkey (index)'
+  }
+}
+Error adding project member: PrismaClientKnownRequestError: 
+Invalid `prisma.projectMember.create()` invocation:
+
+
+Foreign key constraint violated: `ProjectMember_userId_fkey (index)`
+    at $n.handleRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async file:///Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/dist/routes/projects.js:421:24 {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'ProjectMember',
+    field_name: 'ProjectMember_userId_fkey (index)'
+  }
+}
+Error adding project member: PrismaClientKnownRequestError: 
+Invalid `prisma.projectMember.create()` invocation:
+
+
+Foreign key constraint violated: `ProjectMember_userId_fkey (index)`
+    at $n.handleRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:7315)
+    at $n.handleAndLogRequestError (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6623)
+    at $n.request (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:121:6307)
+    at async l (/Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/node_modules/.pnpm/@prisma+client@5.22.0_prisma@5.22.0/node_modules/@prisma/client/runtime/library.js:130:9633)
+    at async file:///Users/hassanzeb/Hassan/d/Standup/timesheet-backend-starter/dist/routes/projects.js:421:24 {
+  code: 'P2003',
+  clientVersion: '5.22.0',
+  meta: {
+    modelName: 'ProjectMember',
+    field_name: 'ProjectMember_userId_fkey (index)'
+  }
+}

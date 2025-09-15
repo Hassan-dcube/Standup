@@ -1,0 +1,21 @@
+app = "clandestine-6513c595-d442-4d4d-a24f-c9fe7c27f4d1"
+
+[env]
+  NODE_ENV = "production"
+
+[experimental]
+  auto_rollback = true
+
+[[services]]
+  internal_port = 4173
+  protocol = "tcp"
+  auto_stop_machines = "suspend"
+  auto_start_machines = true
+
+  [[services.ports]]
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
